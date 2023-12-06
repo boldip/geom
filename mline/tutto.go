@@ -18,6 +18,6 @@ func (r1 Line) IsParallel(r2 Line) bool {
   return r1.m == r2.m
 }
 
-func (r Line) Belongs(mpoint.Point p) bool {
+func (r Line) Belongs(p mpoint.Point) bool {
   return p.Y() == r.m * p.X() + r.q
 }
